@@ -259,7 +259,6 @@ if __name__ == "__main__":
     except SystemExit as e:
         print("Oh. Someone raised a SystemExit with code", e.code, ". That was not expected. (except exit())")
         exit(e.code)
-    # These won't be executed.
     except Exception as e:
         import traceback
         print(f"Error occurred: {e}")
