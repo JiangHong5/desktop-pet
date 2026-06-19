@@ -148,7 +148,7 @@ class Pet:
         # 修正文件名拼接，避免语法错误
         suffix = "" if self.frame == -1 else f"_{self.frame}"
         fname = self.path + f"{self.animation}{suffix}.png"
-        print(f"Drawing animation: {self.animation}, frame: {self.frame}, file name: {fname}")
+        # print(f"Drawing animation: {self.animation}, frame: {self.frame}, file name: {fname}")
         self.image = pygame.image.load(fname).convert_alpha()
         self.rect = self.image.get_rect(topleft=self.rect.topleft)
         self.image = pygame.transform.scale(
