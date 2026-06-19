@@ -52,7 +52,7 @@ class Pet:
             # self.setup_animation('fall', 1)
             if not self.on_ground:
                 self.velocity.y += self.gravity
-                self.rect.y += self.velocity.y
+                self.rect.y += int(self.velocity.y)
 
             if self.rect.bottom >= self.GROUND_Y:
                 self.rect.bottom = self.GROUND_Y
